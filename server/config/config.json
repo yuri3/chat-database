@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "yury13",
+    "database": "chat",
+    "host": "127.0.0.1",
+    "port": 5432,
+    "dialect": "postgres",
+    "protocol": "postgres"
+  },
+  "test": {
+    "username": "postgres",
+    "password": "yury13",
+    "database": "chat-test",
+    "host": "127.0.0.1",
+    "port": 5432,
+    "dialect": "postgres",
+    "protocol": "postgres"
+  },
+  "production": {
+    "use_env_variable": "DATABASE_URL"
+  }
+}

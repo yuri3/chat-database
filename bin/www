@@ -1,0 +1,12 @@
+const http = require('http');
+const app = require('../app');
+
+const port = parseInt(process.env.PORT, 10) || 3003;
+app.set('port', port);
+
+const server = http.createServer(app);
+const io = require('socket.io')(server);
+
+require('../socket')(io);
+
+server.listen(port);

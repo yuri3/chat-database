@@ -1,0 +1,8 @@
+{
+  "extends": "airbnb-base",
+  "rules": {
+    "no-undef": "off",
+    "func-names": ["error", "never"],
+    "no-trailing-spaces": [2, { "skipBlankLines": true }]
+  }
+}
